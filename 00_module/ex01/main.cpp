@@ -9,7 +9,6 @@ static bool	isValidCommand(std::string command) {
 	else if (command.compare("EXIT") == 0 || command.compare("exit") == 0)
 		return true;
 	return false;	
-
 }
 
 int	main(void) {
@@ -34,5 +33,4 @@ int	main(void) {
 		}
 	}
 	return 0;
-
 }

@@ -4,7 +4,7 @@ SRCS	= main.cpp Contact.cpp PhoneBook.cpp
 OBJS	= $(patsubst %.cpp, %.o, $(SRCS))
 DEPS	= $(patsubst %.cpp, %.d, $(SRCS))
 
-CC	= c++
+CC		= c++
 CFLAGS	= -Wall -Wextra -Werror -std=c++98 -MMD
 
 all: $(NAME)
