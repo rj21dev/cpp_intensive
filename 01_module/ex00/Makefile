@@ -12,7 +12,7 @@ OBJ			= $(addprefix $(OBJ_DIR), $(OBJ_F))
 DEP			= $(addprefix $(OBJ_DIR), $(DEP_F))
 
 CC			= c++
-CFLAGS		= -Wall -Wextra -Werror -MMD
+CFLAGS		= -Wall -Wextra -Werror -std=c++98 -MMD
 
 all: $(NAME)
 
