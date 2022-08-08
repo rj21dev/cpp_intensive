@@ -12,9 +12,9 @@ Fixed::Fixed(const Fixed& copyFrom) {
 }
 Fixed& Fixed::operator=(Fixed const & rightSide) {
 
+	std::cout << "Copy assignment operator called" << std::endl;
 	if (this == &rightSide)
 		return *this;
-	std::cout << "Copy assignment operator called" << std::endl;
 	rawBits = rightSide.getRawBits();
 	return *this;
 }
