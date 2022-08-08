@@ -1,4 +1,4 @@
-NAME		= FragTrap 
+NAME		= fragTrap 
 
 SRC_DIR		= src/
 OBJ_DIR		= obj/

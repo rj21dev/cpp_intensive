@@ -1,12 +1,21 @@
 #include "../inc/ClapTrap.hpp"
 
+ClapTrap::ClapTrap() {
+
+	_name = "Default";
+	_hitPoints = 10;
+	_energyPoints = 10;
+	_attackDamage = 0;
+	std::cout << "Default constructor called (ClapTrap)" << std::endl;
+}
+
 ClapTrap::ClapTrap(std::string name) {
 
 	_name = name;
 	_hitPoints = 10;
 	_energyPoints = 10;
 	_attackDamage = 0;
-	std::cout << "Default constructor called (ClapTrap)" << std::endl;
+	std::cout << "Parametric constructor called (ClapTrap)" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& src) {
@@ -46,7 +55,7 @@ void		ClapTrap::attack(const std::string& target) {
 		_energyPoints--;
 	}
 	else
-		std::cout << "ClapTrap: Not enogh EP" << std::endl;
+		std::cout << "ClapTrap " << this->_name << ": Not enogh EP" << std::endl;
 }
 
 void		ClapTrap::takeDamage(unsigned int amount) {
@@ -84,5 +93,5 @@ void		ClapTrap::beRepaired(unsigned int amount) {
 		_hitPoints += amount;
 	}
 	else
-		std::cout << "ClapTrap: Not enogh EP" << std::endl;
+		std::cout << "ClapTrap " << this->_name << ": Not enogh EP" << std::endl;
 }

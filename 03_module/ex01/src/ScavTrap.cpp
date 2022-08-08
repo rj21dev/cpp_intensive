@@ -1,11 +1,19 @@
 #include "../inc/ScavTrap.hpp"
 
-ScavTrap::ScavTrap(std::string name) : ClapTrap(name) {
+ScavTrap::ScavTrap() {
 
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;
 	std::cout << "Default constructor called (ScavTrap)" << std::endl;
+}
+
+ScavTrap::ScavTrap(std::string name) : ClapTrap(name) {
+
+	_hitPoints = 100;
+	_energyPoints = 50;
+	_attackDamage = 20;
+	std::cout << "Parametric constructor called (ScavTrap)" << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap& src) : ClapTrap(src) {
@@ -50,5 +58,5 @@ void		ScavTrap::attack(const std::string& target) {
 		_energyPoints--;
 	}
 	else
-		std::cout << "ScavTrap: Not enogh EP" << std::endl;
+		std::cout << "ScavTrap " << this->_name << ": Not enogh EP" << std::endl;
 }

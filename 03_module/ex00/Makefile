@@ -1,4 +1,4 @@
-NAME		= ClapTrap 
+NAME		= clapTrap 
 
 SRC_DIR		= src/
 OBJ_DIR		= obj/

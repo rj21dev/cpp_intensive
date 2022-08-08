@@ -95,3 +95,13 @@ void		ClapTrap::beRepaired(unsigned int amount) {
 	else
 		std::cout << "ClapTrap: Not enogh EP" << std::endl;
 }
+
+std::string	ClapTrap::getName() {
+
+	return _name;
+}
+
+unsigned	ClapTrap::getDamage() {
+
+	return _attackDamage;
+}

@@ -55,7 +55,7 @@ void		ClapTrap::attack(const std::string& target) {
 		_energyPoints--;
 	}
 	else
-		std::cout << "ClapTrap: Not enogh EP" << std::endl;
+		std::cout << "ClapTrap " << this->_name << ": Not enogh EP" << std::endl;
 }
 
 void		ClapTrap::takeDamage(unsigned int amount) {
@@ -93,5 +93,5 @@ void		ClapTrap::beRepaired(unsigned int amount) {
 		_hitPoints += amount;
 	}
 	else
-		std::cout << "ClapTrap: Not enogh EP" << std::endl;
+		std::cout << "ClapTrap " << this->_name << ": Not enogh EP" << std::endl;
 }

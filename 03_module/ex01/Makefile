@@ -1,4 +1,4 @@
-NAME		= ScavTrap 
+NAME		= scavTrap 
 
 SRC_DIR		= src/
 OBJ_DIR		= obj/

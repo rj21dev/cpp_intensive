@@ -3,6 +3,8 @@
 int	main(void) {
 
 	ClapTrap bot("Desepticon");
+
+	std::cout << std::endl;
 	bot.attack("Optimus Prime");
 	bot.takeDamage(3);
 	bot.beRepaired(2);
@@ -22,6 +24,7 @@ int	main(void) {
 	bot.beRepaired(2);
 	bot.attack("Optimus Prime");
 	bot.takeDamage(4);
+	std::cout << std::endl;
 
 	return 0;
 }

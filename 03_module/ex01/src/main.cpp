@@ -3,6 +3,8 @@
 int	main(void) {
 
 	ScavTrap gk("Gate Keeper");
+
+	std::cout << std::endl;
 	gk.guardGate();
 	gk.attack("Raider");
 	gk.takeDamage(5);
@@ -23,6 +25,7 @@ int	main(void) {
 	gk.beRepaired(5);
 	gk.takeDamage(90);
 	gk.beRepaired(10);
+	std::cout << std::endl;
 
 	return 0;
 }
