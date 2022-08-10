@@ -1,10 +1,10 @@
-NAME		= abstract_demo
+NAME		= materia_fight
 
 SRC_DIR		= src/
 OBJ_DIR		= obj/
 INC_DIR		= inc/
 
-SRC_F		= main.cpp
+SRC_F		= main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 SRC			= $(addprefix $(SRC_DIR), $(SRC_F))
 OBJ_F		= $(patsubst %.cpp, %.o, $(SRC_F))
 DEP_F		= $(patsubst %.cpp, %.d, $(SRC_F))
@@ -12,7 +12,7 @@ OBJ			= $(addprefix $(OBJ_DIR), $(OBJ_F))
 DEP			= $(addprefix $(OBJ_DIR), $(DEP_F))
 
 CC			= c++
-CFLAGS		= -Wall -Wextra -Werror -std=c++98 -MMD
+CFLAGS		= -Wall -Wextra -Werror -std=c++98 -MMD -g
 
 all: $(NAME)
 

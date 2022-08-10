@@ -26,6 +26,9 @@ Character::Character(Character const & src) {
 
 Character::~Character() {
 
+	for (int i = 0; i < 4; i++)
+		if (_inventory[i])
+			delete _inventory[i];
 	std::cout << "Destructor called (Character)" << std::endl;
 }
 
