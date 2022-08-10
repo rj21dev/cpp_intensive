@@ -1,10 +1,10 @@
-NAME		= zoo
+NAME		= abstract_demo
 
 SRC_DIR		= src/
 OBJ_DIR		= obj/
 INC_DIR		= inc/
 
-SRC_F		= main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp WrongDog.cpp
+SRC_F		= main.cpp AAnimal.cpp Cat.cpp Dog.cpp Brain.cpp
 SRC			= $(addprefix $(SRC_DIR), $(SRC_F))
 OBJ_F		= $(patsubst %.cpp, %.o, $(SRC_F))
 DEP_F		= $(patsubst %.cpp, %.d, $(SRC_F))

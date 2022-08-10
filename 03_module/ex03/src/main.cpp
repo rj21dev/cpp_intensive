@@ -20,7 +20,12 @@ int	main(void) {
 	
 	log_separator();
 	bot_1.whoAmI();
+	bot_1.guardGate();
+	bot_1.highFivesGyes();
+	log_separator();
 	bot_2.whoAmI();
+	bot_2.guardGate();
+	bot_2.highFivesGyes();
 	log_separator();
 
 	// Start battle
