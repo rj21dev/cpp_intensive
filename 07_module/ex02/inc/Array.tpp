@@ -43,7 +43,7 @@ template <typename T>
 T& Array<T>::operator[](unsigned int index) {
 
 	if (index < 0 || index >= n)
-		throw std::out_of_range("Index out of range");
+		throw RangeException();
 	return arr[index];
 }
 
@@ -51,7 +51,7 @@ template <typename T>
 T const & Array<T>::operator[](unsigned int index) const {
 
 	if (index < 0 || index >= n)
-		throw std::out_of_range("Index out of range");
+		throw RangeException();
 	return arr[index];
 }
 
@@ -59,4 +59,10 @@ template <typename T>
 unsigned int Array<T>::size() const {
 
 	return n;
+}
+
+template <typename T>
+const char* Array<T>::RangeException::what() const throw() {
+
+	return "Index out of range";
 }

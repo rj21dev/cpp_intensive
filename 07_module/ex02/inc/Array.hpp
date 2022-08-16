@@ -21,6 +21,12 @@ class Array {
 		T const &		operator[](unsigned int index) const;
 
 		unsigned int	size() const;
+
+		class RangeException : public std::exception {
+
+			public:
+				virtual const char* what() const throw();
+		};
 };
 
 #include "Array.tpp"
