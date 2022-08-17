@@ -19,11 +19,11 @@ int main(void) {
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 		try {
-			test.longestSpan();
+			test.shortestSpan();
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 		try {
-			test.shortestSpan();
+			test.longestSpan();
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 	}
@@ -31,19 +31,19 @@ int main(void) {
 	{
 		Span test(5);
 		try {
+			test.addNumber(6);
 			test.addNumber(3);
-			test.addNumber(12);
-			test.addNumber(500);
-			test.addNumber(1000);
-			test.addNumber(1234);
-		}
-		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
-		try	{
-			std::cout << "Longest span: " << test.longestSpan() << std::endl;
+			test.addNumber(17);
+			test.addNumber(9);
+			test.addNumber(11);
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 		try	{
 			std::cout << "Shortest span: " << test.shortestSpan() << std::endl;
+		}
+		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
+		try	{
+			std::cout << "Longest span: " << test.longestSpan() << std::endl;
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 	}
@@ -59,11 +59,11 @@ int main(void) {
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 		try	{
-			std::cout << "Longest span: " << test.longestSpan() << std::endl;
+			std::cout << "Shortest span: " << test.shortestSpan() << std::endl;
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 		try	{
-			std::cout << "Shortest span: " << test.shortestSpan() << std::endl;
+			std::cout << "Longest span: " << test.longestSpan() << std::endl;
 		}
 		catch(std::exception & e) { std::cerr << e.what() << std::endl; }
 	}
