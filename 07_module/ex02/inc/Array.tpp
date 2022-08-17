@@ -48,7 +48,7 @@ T& Array<T>::operator[](unsigned int index) {
 }
 
 template <typename T>
-T const & Array<T>::operator[](unsigned int index) const {
+T const  Array<T>::operator[](unsigned int index) const {
 
 	if (index < 0 || index >= n)
 		throw RangeException();
